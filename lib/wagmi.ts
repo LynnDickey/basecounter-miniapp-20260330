@@ -10,7 +10,7 @@ export const DATA_SUFFIX = Attribution.toDataSuffix({
 
 export const wagmiConfig = createConfig({
   chains: [base],
-  connectors: [injected({ target: "metaMask" }), injected({ target: "coinbaseWallet" }), injected()],
+  connectors: [injected()],
   transports: {
     [base.id]: http(),
   },

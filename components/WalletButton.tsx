@@ -11,7 +11,7 @@ export function WalletButton() {
   const { connect, connectors, isPending } = useConnect();
   const { disconnect } = useDisconnect();
 
-  const connector = connectors[0];
+  const connector = connectors.find((item) => item.ready) ?? connectors[0];
 
   if (isConnected && address) {
     return (
