@@ -4,8 +4,8 @@ import { injected } from "wagmi/connectors";
 import { base } from "wagmi/chains";
 
 export const DATA_SUFFIX = Attribution.toDataSuffix({
-  // Replace this builder code with your real value before production launch.
-  codes: ["BUILDER_CODE_PLACEHOLDER"],
+  // ERC-8021 Builder Code attribution injection.
+  codes: ["bc_c144u0dv"],
 });
 
 export const wagmiConfig = createConfig({
